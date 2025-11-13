@@ -1,17 +1,31 @@
 # case_1.  
+
 Установка:
+
 sudo apt install openssh-server -y
+
 Проверка работы:
+
 sudo systemctl status ssh
+
 Result - running
+
 # case_2.
+
 1)Проверяю адрес ВМ командой в терминале:
+
 ip a
+
 2)Проверяю соединение
+
 ping 192.168.56.2 в powershell
+
 3)Подключился к ВМ через SSH командой:
+
 & "C:\Windows\SysNative\OpenSSH\ssh.exe" mat@192.168.56.2
+
 # case_3.
+
 1)Создание файла прог_инженер.txt по пути C:\Users\radaev\ssh_dz\прог_инженер.txt
 2)Копирую файл с хоста на ВМ командой:
 & "C:\Windows\SysNative\OpenSSH\scp.exe" "C:\Users\radaev\Desktop\прог_инженер.txt" mat@192.168.56.2:~/ssh_dz/
