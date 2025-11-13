@@ -1,10 +1,10 @@
 # case_1.  
 
-Установка:
+1)Установка:
 
 sudo apt install openssh-server -y
 
-Проверка работы:
+2)Проверка:
 
 sudo systemctl status ssh
 
